@@ -1,19 +1,27 @@
-import { Image, StyleSheet, Text } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 
 function MyImage(props) {
   return (
-    <>
+    <View style={styles.container}>
       <Image source={props.imageSource} style={styles.image} />
-    </>
+    </View>
   );
 }
 export default MyImage;
 
 const styles = StyleSheet.create({
   image: {
-    borderColor: "blue",
-    height: 200,
-    borderWidth: 3,
-    width: 200,
+    height: 25,
+
+    width: 25,
+  },
+  container: {
+    borderwidth: 1,
+    height: 64,
+    width: 92,
+    borderRadius: 30,
+    backgroundColor: "white",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

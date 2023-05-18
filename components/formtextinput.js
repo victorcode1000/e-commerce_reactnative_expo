@@ -13,6 +13,7 @@ function FormTextInput(props) {
         color={props.antDesigncolor}
         style={styles.antDesignicon}
       />
+
       <Text style={styles.errorText}>{props.errorText}</Text>
     </View>
   );
